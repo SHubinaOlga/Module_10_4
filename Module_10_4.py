@@ -39,7 +39,7 @@ class Cafe:
     def discuss_guests(self):
         while not self.queue.empty() or not (t.guest for t in self.tables):
              for table in self.tables:
-                 if not self.queue.empty() and (table.guest is None:
+                 if not self.queue.empty() and table.guest is None:
                     table.guest = self.queue.get()
                     print(f'{table.guest.name} вышел(-ла) из очереди и сел(-а) за '
                           f'стол номер {table.number}')
